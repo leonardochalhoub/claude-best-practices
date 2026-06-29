@@ -1,0 +1,19 @@
+name: ci
+
+# Deterministic, offline link check — verifies every relative Markdown link
+# resolves to a real file. No network, so no external-link flakiness.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check relative Markdown links resolve
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: "--offline --no-progress './**/*.md'"
+          fail: true

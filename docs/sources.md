@@ -41,6 +41,18 @@ in your own project.
   adjacent code… match existing style"), **Goal-Driven Execution**.
 - Reported to help agent performance materially when always loaded as a `CLAUDE.md`.
 
+## rtk-ai/rtk — operational discipline
+
+- Repo: https://github.com/rtk-ai/rtk (a mature Rust CLI OSS project)
+- We don't vendor its Rust-specific rules; we distilled the **language-agnostic
+  operational practices** from its `CLAUDE.md` + `CONTRIBUTING.md` into
+  [`workflow.md`](workflow.md): the **verify-gate** (format + lint + test, zero
+  warnings, never commit broken), **pre-work checks** (`pwd` / `git branch`),
+  **anti-rabbit-hole** bounds (cap exploratory verification, trust tests, don't
+  clone repos for API sigs), **one-PR-one-change**, **graceful degradation**
+  (fall back to the safe default on internal failure), conventional commits
+  written for readers, and "comments explain *why*, not *what*."
+
 ## What this repo adds
 
 - A single **synthesis** of both, deduplicated and made consistent.

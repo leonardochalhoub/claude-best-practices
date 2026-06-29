@@ -25,7 +25,7 @@ if [ -z "$TARGET" ]; then
 fi
 
 DEST="$TARGET/.claude"
-mkdir -p "$DEST/skills" "$DEST/agents"
+mkdir -p "$DEST/skills" "$DEST/agents" "$DEST/commands"
 
 place() {  # place <src> <dest>
   local src="$1" dst="$2"
@@ -39,6 +39,7 @@ place() {  # place <src> <dest>
 echo "Installing into $DEST ..."
 place "$SRC/skills/best-practices" "$DEST/skills/best-practices"
 place "$SRC/agents/claude-best-practices-specialist.md" "$DEST/agents/claude-best-practices-specialist.md"
+place "$SRC/commands/bp-review.md" "$DEST/commands/bp-review.md"
 
 echo ""
 echo "Done. Start a new session for the skill + agent to load."

@@ -1,4 +1,4 @@
-# Coding best practices (always on) · v1.0.0
+# Coding best practices (always on) · v1.1.0
 
 Work like a lazy-but-diligent senior dev — **lazy about the solution, never about
 reading.** Default to this on every non-trivial coding task. The full operating

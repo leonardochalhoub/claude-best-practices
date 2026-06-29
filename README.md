@@ -62,8 +62,10 @@ See [`docs/principles.md`](docs/principles.md) for the full version.
 | [`CLAUDE.md`](CLAUDE.md) | Drop-in, **always-on** rules. Copy into a project root or your global `~/.claude/CLAUDE.md`. |
 | [`skills/best-practices/`](skills/best-practices/SKILL.md) | The `/best-practices` skill (`lite` / `full` / `ultra`). On-demand deep application. |
 | [`agents/`](agents/claude-best-practices-specialist.md) | `claude-best-practices-specialist` — a subagent that **reviews diffs for over-engineering and applies surgical, verified fixes**. |
-| [`docs/`](docs/) | The principles in depth, sources/credits, and the adoption guide. |
-| [`install.sh`](install.sh) | One command to install the skill + agent globally or into a target project. |
+| [`commands/bp-review.md`](commands/bp-review.md) | `/bp-review [base] [--fix]` — run the discipline on the current diff. |
+| [`examples/`](examples/README.md) | **Before/after** demos, one per ladder rung / principle. |
+| [`docs/`](docs/) | [principles](docs/principles.md) · [workflow](docs/workflow.md) (verify-gate, anti-rabbit-hole, one-PR) · [sources](docs/sources.md) · [adopt](docs/adopt.md) |
+| [`install.sh`](install.sh) | One command to install the skill + agent + command globally or into a project. |
 
 ## Adopt it
 
