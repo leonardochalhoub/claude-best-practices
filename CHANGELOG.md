@@ -5,6 +5,11 @@ versioning is [SemVer](https://semver.org/). Keep entries written for a reader.
 
 ## [Unreleased]
 
+### Added
+- Measurement harness: `docs/measure.md` (A/B protocol), `scripts/measure.sh`
+  (deterministic net-LOC / files delta), and `benchmarks/README.md` (results
+  template) — so impact numbers are measured here, not borrowed.
+
 ## [1.1.0] — 2026-06-29
 
 ### Added

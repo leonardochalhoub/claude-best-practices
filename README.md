@@ -64,7 +64,8 @@ See [`docs/principles.md`](docs/principles.md) for the full version.
 | [`agents/`](agents/claude-best-practices-specialist.md) | `claude-best-practices-specialist` — a subagent that **reviews diffs for over-engineering and applies surgical, verified fixes**. |
 | [`commands/bp-review.md`](commands/bp-review.md) | `/bp-review [base] [--fix]` — run the discipline on the current diff. |
 | [`examples/`](examples/README.md) | **Before/after** demos, one per ladder rung / principle. |
-| [`docs/`](docs/) | [principles](docs/principles.md) · [workflow](docs/workflow.md) (verify-gate, anti-rabbit-hole, one-PR) · [sources](docs/sources.md) · [adopt](docs/adopt.md) |
+| [`docs/`](docs/) | [principles](docs/principles.md) · [workflow](docs/workflow.md) (verify-gate, anti-rabbit-hole, one-PR) · [measure](docs/measure.md) · [sources](docs/sources.md) · [adopt](docs/adopt.md) |
+| [`benchmarks/`](benchmarks/README.md) + [`scripts/measure.sh`](scripts/measure.sh) | A/B harness to measure the impact on **your** tasks (don't ship borrowed numbers). |
 | [`install.sh`](install.sh) | One command to install the skill + agent + command globally or into a project. |
 
 ## Adopt it
@@ -84,7 +85,11 @@ Three adoption models and what each touches are in [`docs/adopt.md`](docs/adopt.
 ponytail's *agentic* benchmark (12 feature tasks, Haiku 4.5): **−54% LOC,
 −22% tokens, −20% cost, −27% time, 100% safety.** Its older "80–94% less code"
 single-shot figures are noted by the author as inflated by conversational
-padding — anchor on the agentic numbers. Your mileage will vary; measure.
+padding — anchor on the agentic numbers.
+
+Those are *borrowed* numbers. To make them yours, run the A/B harness
+([`docs/measure.md`](docs/measure.md) + [`scripts/measure.sh`](scripts/measure.sh))
+and log results in [`benchmarks/`](benchmarks/README.md).
 
 ## Living document
 
